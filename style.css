@@ -1,0 +1,67 @@
+/* Общие стили для панели логина и чата */
+#login-panel, #chat {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #e0e0e0; /* Светло-серая граница */
+    padding: 10px;
+    background-color: #fff; /* Белый фон */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Более легкая тень */
+}
+
+/* Стили для окна сообщений */
+#chat-messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0; /* Светло-серая граница */
+    margin-bottom: 10px;
+    background-color: #f7f7f7; /* Светло-серый фон */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Стили для поля ввода текста и поиска */
+#chat-input, #username, #message-search {
+    width: calc(100% - 22px);
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0; /* Светло-серая граница */
+    border-radius: 3px;
+    background-color: #f7f7f7; /* Светло-серый фон */
+}
+
+/* Стили для кнопок */
+#login-btn, #chat-send, #logout-btn, #search-btn {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    background-color: #e0e0e0; /* Светло-серый фон для кнопок */
+    color: #333; /* Темно-серый цвет текста */
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#login-btn:hover, #chat-send:hover, #logout-btn:hover, #search-btn:hover {
+    background-color: #d0d0d0; /* Немного темнее при наведении */
+}
+
+/* Стили для системных сообщений и сообщений от пользователя */
+.system-message, .user-message, .other-user-message {
+    color: #333; /* Единый темно-серый цвет для всех текстов */
+    font-style: normal; /* Нормальный стиль шрифта */
+}
+
+/* Стили для поискового поля и панели */
+#message-search, #search-panel {
+    margin-bottom: 20px; /* Дополнительный отступ снизу */
+}
+
+#search-panel {
+    display: flex; /* Для выравнивания поля поиска и кнопки поиска в одной строке */
+    gap: 10px; /* Расстояние между элементами */
+}
+
+#search-btn {
+    flex-shrink: 0; /* Предотвращает уменьшение кнопки */
+}
